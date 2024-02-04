@@ -1,0 +1,49 @@
+{
+  "name": "take-home-starter",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "jest --collect-coverage --no-cache --ci --watchAll=false --silent --config jest.config.js",
+    "test:fix": "npm run test -- -u"
+  },
+  "dependencies": {
+    "tailwindcss": "3.3.3",
+    "@tailwindcss/forms": "0.5.x",
+    "@tailwindcss/typography": "0.5.x",
+    "autoprefixer": "^10.4.15",
+    "axios": "^1.5.0",
+    "postcss": "^8.4.29",
+    "react": "18.2.x",
+    "react-dom": "18.2.x",
+    "react-query": "^3.39.3",
+    "react-router-dom": "6.15.x",
+    "vite": "4.4.x",
+    "@vitejs/plugin-react": "4.0.x",
+    "jest-extended": "^4.0.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "6.1.x",
+    "@testing-library/react": "14.0.x",
+    "@types/jest": "29.5.x",
+    "@types/node": "18.17.x",
+    "@types/react": "18.2.x",
+    "@types/react-dom": "18.2.x",
+    "@typescript-eslint/eslint-plugin": "6.5.x",
+    "eslint": "8.48.x",
+    "eslint-config-airbnb": "19.0.x",
+    "eslint-config-airbnb-typescript": "17.1.x",
+    "eslint-plugin-jsdoc": "^46.5.1",
+    "eslint-plugin-react-refresh": "0.4.x",
+    "jest": "29.6.x",
+    "jest-cli": "29.6.x",
+    "jest-environment-jsdom": "^29.6.4",
+    "prettier": "3.0.x",
+    "ts-jest": "29.1.x",
+    "typescript": "5.0.x"
+  }
+}

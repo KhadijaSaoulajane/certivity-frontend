@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "env":  { "browser": true, "es2021": true },
+  "ignorePatterns": [
+    "projects/**/*"  ],
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:jsdoc/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "tsconfig.json"
+  },
+  "overrides": [{
+    "files": [
+      "*.tsx",
+      "*.ts",
+      "*.jsx",
+      "*.js"
+    ],
+    "rules": {
+      "max-len": ["error", { "code": 120 }],
+      "react/function-component-definition": "off",
+      "jsdoc/require-returns": "off"
+    }
+  }]
+}
